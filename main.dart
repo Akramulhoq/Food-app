@@ -367,7 +367,7 @@ class CustomSliderThumb extends SliderComponentShape {
     final Canvas canvas = context.canvas;
 
     final Paint fillPaint = Paint()
-      ..color = Colors.red; // ভিতরের রং
+      ..color = Colors.red; 
 
     final Paint borderPaint = Paint()
       ..color = Colors.white
@@ -382,11 +382,12 @@ class CustomSliderThumb extends SliderComponentShape {
 
     RRect rRect = RRect.fromRectAndRadius(
       rect,
-      Radius.circular(4), // radius 4px
+      Radius.circular(4), 
     );
 
-    canvas.drawRRect(rRect, fillPaint);   // ভিতরের অংশ
-    canvas.drawRRect(rRect, borderPaint); // border
+    canvas.drawRRect(rRect, fillPaint);   
+    canvas.drawRRect(rRect, borderPaint); 
   }
 }
+
 
